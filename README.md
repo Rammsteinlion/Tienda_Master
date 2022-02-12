@@ -1,7 +1,7 @@
 # Tienda_Master
 Proyecto de una tienda online
 
-<img height='355' src='captura.png' alt='imagen_principal'>
+<img src="Captura.png" alt="ImagenPrincipal">
 
 # Lenguajes y herramientas
 ### Manejo del lenguaje Php, utilizando también css3,html5,MysQl.
