@@ -1,0 +1,15 @@
+<ifModule mod_rewrite.c>
+
+    # Activar rewrite 
+         RewriteEngine on
+         ErrorDocument 404 http://localhost/Curso_Master/Master_php/tienda_online/error/
+
+ 
+
+    #No permitira que cargue ningun fichero ningun directorio cualquiera
+        RewriteCond %{SCRIPT_FILENAME} !-d
+        RewriteCond %{SCRIPT_FILENAME} !-f
+
+    #reecriba cualquier ruta a la mencionada el el codigo.
+        RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</ifModule> 
